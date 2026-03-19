@@ -30,3 +30,7 @@ blob-report/
 
 # npm lock files (project uses pnpm)
 package-lock.json
+
+# Internal dev instructions (not for public repo)
+CLAUDE.md
+.claude/

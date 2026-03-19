@@ -83,6 +83,8 @@ rsync -a \
   --exclude='build' \
   --exclude='.interface-design' \
   --exclude='specs/expose' \
+  --exclude='CLAUDE.md' \
+  --exclude='.claude' \
   "$SOURCE_DIR/" "$TMPDIR/"
 
 # Quick secrets check — abort if any obvious secrets slip through
