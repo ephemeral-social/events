@@ -85,9 +85,12 @@ rsync -a \
   --exclude='specs/expose' \
   --exclude='CLAUDE.md' \
   --exclude='.claude' \
+  --exclude='OPEN_SOURCE_AUDIT.md' \
+  --exclude='REVIEW_REPORT.md' \
+  --exclude='BACKEND_INTEGRATION_PLAN.md' \
   "$SOURCE_DIR/" "$TMPDIR/"
 
-# Quick secrets check — abort if any obvious secrets slip through
+# Quick secrets check - abort if any obvious secrets slip through
 if grep -rq "sk_live_\|sk_test_\|JWT_SECRET\|TWILIO_AUTH" --include="*.ts" --include="*.svelte" --include="*.toml" --include="*.json" "$TMPDIR/"; then
   echo "ERROR: Potential secrets detected! Aborting."
   echo "Run a manual review before syncing."
@@ -108,9 +111,7 @@ CHANGED=$(git diff --cached --stat | tail -1)
 echo "Changes: $CHANGED"
 echo ""
 
-git commit -q -m "$COMMIT_MSG
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+git commit -q -m "$COMMIT_MSG"
 
 if $DRY_RUN; then
   echo "DRY RUN complete. Changes above would be pushed."

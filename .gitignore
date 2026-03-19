@@ -31,6 +31,9 @@ blob-report/
 # npm lock files (project uses pnpm)
 package-lock.json
 
-# Internal dev instructions (not for public repo)
+# Internal dev artifacts (not for public repo)
 CLAUDE.md
 .claude/
+OPEN_SOURCE_AUDIT.md
+REVIEW_REPORT.md
+BACKEND_INTEGRATION_PLAN.md
