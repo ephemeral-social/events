@@ -240,6 +240,29 @@ Before shipping any aesthetic change, apply these 4 tests:
 
 4. **Token Test**: Read the CSS variable names out loud. Do they sound like they belong to this aesthetic's world, or could they belong to any project?
 
+## Open-Source Public Repo
+
+The events web app is published as open source at **https://github.com/ephemeral-social/events**.
+
+**Monorepo `git push` is safe** — the monorepo only has `origin` pointing to `mansoorsiddiqui/ephemeral`. The public repo is NOT configured as a remote. Pushing to the monorepo will never push to the public repo.
+
+**Syncing to the public repo** uses `scripts/sync-to-public.sh`, which clones the public repo, rsyncs files from the monorepo, and pushes an incremental commit (preserving history):
+
+```bash
+# Dry run (default) — shows diff summary, doesn't push
+./scripts/sync-to-public.sh
+
+# Actually push
+./scripts/sync-to-public.sh --push
+
+# Push with a custom commit message
+./scripts/sync-to-public.sh --push -m "feat: add ticketing"
+```
+
+The script automatically excludes: `node_modules/`, `.svelte-kit/`, `.wrangler/`, `.env*`, `.dev.vars`, `.interface-design/`, `specs/expose/`, build artifacts. It runs a secrets grep and aborts if `sk_live_`, `sk_test_`, `JWT_SECRET`, or `TWILIO_AUTH` are found. Files deleted in the monorepo are also deleted in the public repo.
+
+**Production env vars** (`BACKEND_URL`, `STRIPE_PUBLISHABLE_KEY`, `PINTEREST_APP_ID`) are managed as **encrypted Secrets** in the Cloudflare Pages dashboard — NOT in `wrangler.toml`. This keeps them out of the public repo. The KV namespace ID in `wrangler.toml` is a resource identifier, not a secret.
+
 ## Do NOT
 
 - Add a light mode or theme toggle
