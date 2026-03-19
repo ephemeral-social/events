@@ -1,0 +1,65 @@
+/* ── Elegant / Rose / Light ───────────────────────────────────────── */
+/* Warm blush-tinted white. Muted dusty rose accent. */
+
+[data-aesthetic="elegant"][data-palette="rose"][data-mode="light"] {
+  /* Surfaces -- warm blush-tinted white */
+  --background:           oklch(0.975 0.008 10);
+  --foreground:           oklch(0.22 0.012 350);
+  --card:                 oklch(0.99 0.005 10);
+  --card-foreground:      oklch(0.22 0.012 350);
+  --popover:              oklch(0.99 0.005 10);
+  --popover-foreground:   oklch(0.22 0.012 350);
+
+  /* Interactive -- muted dusty rose */
+  --primary:              oklch(0.55 0.06 350);
+  --primary-foreground:   oklch(0.98 0.005 10);
+  --secondary:            oklch(0.99 0.005 10);
+  --secondary-foreground: oklch(0.22 0.012 350);
+  --muted:                oklch(0.99 0.005 10);
+  --muted-foreground:     oklch(0.58 0.008 350);
+  --accent:               oklch(0.955 0.012 10);
+  --accent-foreground:    oklch(0.22 0.012 350);
+  --destructive:          oklch(0.55 0.14 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border:               oklch(0.88 0.008 350);
+  --input:                oklch(0.88 0.008 350);
+  --ring:                 oklch(0.55 0.06 350);
+  --radius:               0.1875rem;
+
+  /* Charts */
+  --chart-1: oklch(0.55 0.06 350);
+  --chart-2: oklch(0.42 0.010 350);
+  --chart-3: oklch(0.55 0.14 25);
+  --chart-4: oklch(0.52 0.06 145);
+  --chart-5: oklch(0.52 0.08 75);
+
+  /* Typography */
+  --font-heading:         'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body:            'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight:       300;
+  --heading-tracking:     0.08em;
+  --heading-transform:    uppercase;
+  --body-line-height:     1.70;
+
+  /* Shadows (minimal) */
+  --shadow-sm:            none;
+  --shadow-md:            0 1px 3px oklch(0 0 0 / 4%);
+  --shadow-lg:            0 2px 8px oklch(0 0 0 / 5%), 0 1px 2px oklch(0 0 0 / 3%);
+  --shadow-color:         oklch(0 0 0);
+  --shadow-strength:      0.04;
+
+  /* Structural */
+  --border-weight:        1px;
+  --surface-grain:        none;
+
+  /* Per-aesthetic structural */
+  --radius-card:          6px;
+  --radius-button:        3px;
+  --motion-duration-standard: 400ms;
+  --motion-ease:          cubic-bezier(0.25, 0, 0.15, 1);
+  --divider-color:        var(--muted-foreground);
+  --section-gap:          48px;
+  --page-padding:         32px;
+}

@@ -1,0 +1,107 @@
+/* ── Slate Theme ───────────────────────────────────────────────────── */
+/* Clean, professional, trustworthy. The well-organized office. */
+/* Neutral base hue: 250 | Default accent hue: 185 (teal) */
+
+[data-theme="slate"][data-mode="dark"] {
+  /* Surfaces — cool blue-gray */
+  --background: oklch(0.14 0.02 250);
+  --foreground: oklch(0.96 0.005 250);
+  --card: oklch(0.18 0.02 250);
+  --card-foreground: oklch(0.96 0.005 250);
+  --popover: oklch(0.21 0.02 250);
+  --popover-foreground: oklch(0.96 0.005 250);
+
+  /* Interactive — teal accent */
+  --primary: oklch(0.70 0.12 185);
+  --primary-foreground: oklch(0.14 0.03 185);
+  --secondary: oklch(0.23 0.02 250);
+  --secondary-foreground: oklch(0.93 0.005 250);
+  --muted: oklch(0.23 0.02 250);
+  --muted-foreground: oklch(0.63 0.02 250);
+  --accent: oklch(0.27 0.02 250);
+  --accent-foreground: oklch(0.96 0.005 250);
+  --destructive: oklch(0.65 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.60 0.10 185);
+  --radius: 0.5rem;
+
+  /* Charts */
+  --chart-1: oklch(0.70 0.12 185);
+  --chart-2: oklch(0.65 0.10 245);
+  --chart-3: oklch(0.60 0.08 130);
+  --chart-4: oklch(0.68 0.14 40);
+  --chart-5: oklch(0.55 0.12 310);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.10 0 0);
+  --shadow-strength: 0.12;
+  --surface-grain: none;
+  --border-weight: 1px;
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 600;
+  --heading-tracking: -0.01em;
+  --heading-transform: none;
+  --body-line-height: 1.55;
+
+  /* Shadows (concrete values — neutral, functional) */
+  --shadow-sm: 0 1px 2px oklch(0.10 0 0 / 6%);
+  --shadow-md: 0 2px 4px oklch(0.10 0 0 / 4%), 0 4px 8px oklch(0.10 0 0 / 2.5%);
+  --shadow-lg: 0 4px 8px oklch(0.10 0 0 / 3%), 0 8px 16px oklch(0.10 0 0 / 2%), 0 16px 32px oklch(0.10 0 0 / 1.2%);
+}
+
+[data-theme="slate"][data-mode="light"] {
+  /* Surfaces — clean near-white with cool undertone */
+  --background: oklch(0.98 0.003 250);
+  --foreground: oklch(0.15 0.03 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.03 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.03 250);
+
+  /* Interactive — deeper teal for contrast on white */
+  --primary: oklch(0.50 0.12 185);
+  --primary-foreground: oklch(0.98 0.005 185);
+  --secondary: oklch(0.95 0.005 250);
+  --secondary-foreground: oklch(0.20 0.03 250);
+  --muted: oklch(0.95 0.005 250);
+  --muted-foreground: oklch(0.48 0.02 250);
+  --accent: oklch(0.95 0.008 250);
+  --accent-foreground: oklch(0.20 0.03 250);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(0.90 0.008 250);
+  --input: oklch(0.90 0.008 250);
+  --ring: oklch(0.50 0.12 185);
+  --radius: 0.5rem;
+
+  /* Charts */
+  --chart-1: oklch(0.50 0.12 185);
+  --chart-2: oklch(0.48 0.10 245);
+  --chart-3: oklch(0.45 0.08 130);
+  --chart-4: oklch(0.52 0.13 40);
+  --chart-5: oklch(0.45 0.11 310);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.10 0 0);
+  --shadow-strength: 0.25;
+  --surface-grain: none;
+  --border-weight: 1px;
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 600;
+  --heading-tracking: -0.01em;
+  --heading-transform: none;
+  --body-line-height: 1.55;
+
+  /* Shadows (concrete values — neutral, functional) */
+  --shadow-sm: 0 1px 2px oklch(0.10 0 0 / 13%);
+  --shadow-md: 0 2px 4px oklch(0.10 0 0 / 8%), 0 4px 8px oklch(0.10 0 0 / 5%);
+  --shadow-lg: 0 4px 8px oklch(0.10 0 0 / 6%), 0 8px 16px oklch(0.10 0 0 / 4%), 0 16px 32px oklch(0.10 0 0 / 2.5%);
+}

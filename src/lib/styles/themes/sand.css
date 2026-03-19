@@ -1,0 +1,107 @@
+/* ── Sand Theme ────────────────────────────────────────────────────── */
+/* Warm minimalism, quiet luxury. A desert retreat. */
+/* Neutral base hue: 55 | Default accent hue: 30 (terracotta) */
+
+[data-theme="sand"][data-mode="dark"] {
+  /* Surfaces — warm sand-tinted dark */
+  --background: oklch(0.16 0.015 55);
+  --foreground: oklch(0.90 0.02 55);
+  --card: oklch(0.19 0.015 55);
+  --card-foreground: oklch(0.90 0.02 55);
+  --popover: oklch(0.22 0.015 55);
+  --popover-foreground: oklch(0.90 0.02 55);
+
+  /* Interactive — terracotta accent */
+  --primary: oklch(0.68 0.12 30);
+  --primary-foreground: oklch(0.15 0.03 30);
+  --secondary: oklch(0.23 0.015 55);
+  --secondary-foreground: oklch(0.88 0.02 55);
+  --muted: oklch(0.23 0.015 55);
+  --muted-foreground: oklch(0.60 0.03 55);
+  --accent: oklch(0.27 0.02 55);
+  --accent-foreground: oklch(0.90 0.02 55);
+  --destructive: oklch(0.65 0.20 20);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.58 0.10 30);
+  --radius: 0.75rem;
+
+  /* Charts */
+  --chart-1: oklch(0.68 0.12 30);
+  --chart-2: oklch(0.65 0.10 55);
+  --chart-3: oklch(0.60 0.08 150);
+  --chart-4: oklch(0.70 0.11 80);
+  --chart-5: oklch(0.55 0.09 200);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.30 0.04 40);
+  --shadow-strength: 0.10;
+  --surface-grain: url('/textures/linen.svg');
+  --border-weight: 1px;
+  --font-heading: 'Vollkorn', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 400;
+  --heading-tracking: 0em;
+  --heading-transform: none;
+  --body-line-height: 1.70;
+
+  /* Shadows (concrete values — warm, barely visible) */
+  --shadow-sm: 0 1px 2px oklch(0.30 0.04 40 / 5%);
+  --shadow-md: 0 2px 4px oklch(0.30 0.04 40 / 3%), 0 4px 8px oklch(0.30 0.04 40 / 2%);
+  --shadow-lg: 0 4px 8px oklch(0.30 0.04 40 / 2.5%), 0 8px 16px oklch(0.30 0.04 40 / 1.5%), 0 16px 32px oklch(0.30 0.04 40 / 1%);
+}
+
+[data-theme="sand"][data-mode="light"] {
+  /* Surfaces — warm cream, linen-like */
+  --background: oklch(0.96 0.015 55);
+  --foreground: oklch(0.20 0.02 45);
+  --card: oklch(0.98 0.01 55);
+  --card-foreground: oklch(0.20 0.02 45);
+  --popover: oklch(0.98 0.01 55);
+  --popover-foreground: oklch(0.20 0.02 45);
+
+  /* Interactive — deeper terracotta for contrast on cream */
+  --primary: oklch(0.52 0.12 30);
+  --primary-foreground: oklch(0.97 0.01 55);
+  --secondary: oklch(0.93 0.015 55);
+  --secondary-foreground: oklch(0.25 0.02 45);
+  --muted: oklch(0.93 0.015 55);
+  --muted-foreground: oklch(0.50 0.03 45);
+  --accent: oklch(0.93 0.02 50);
+  --accent-foreground: oklch(0.25 0.02 45);
+  --destructive: oklch(0.55 0.22 20);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(0.88 0.02 50);
+  --input: oklch(0.88 0.02 50);
+  --ring: oklch(0.52 0.12 30);
+  --radius: 0.75rem;
+
+  /* Charts */
+  --chart-1: oklch(0.52 0.12 30);
+  --chart-2: oklch(0.50 0.10 55);
+  --chart-3: oklch(0.45 0.08 150);
+  --chart-4: oklch(0.55 0.10 80);
+  --chart-5: oklch(0.42 0.08 200);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.30 0.04 40);
+  --shadow-strength: 0.15;
+  --surface-grain: url('/textures/linen.svg');
+  --border-weight: 1px;
+  --font-heading: 'Vollkorn', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 400;
+  --heading-tracking: 0em;
+  --heading-transform: none;
+  --body-line-height: 1.70;
+
+  /* Shadows (concrete values — warm, subtle) */
+  --shadow-sm: 0 1px 2px oklch(0.30 0.04 40 / 8%);
+  --shadow-md: 0 2px 4px oklch(0.30 0.04 40 / 5%), 0 4px 8px oklch(0.30 0.04 40 / 3%);
+  --shadow-lg: 0 4px 8px oklch(0.30 0.04 40 / 4%), 0 8px 16px oklch(0.30 0.04 40 / 2.3%), 0 16px 32px oklch(0.30 0.04 40 / 1.5%);
+}

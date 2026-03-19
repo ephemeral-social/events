@@ -1,0 +1,65 @@
+/* ── Fun / Cosmic / Dark ──────────────────────────────────────────── */
+/* Teal/cyan on deep space. Sci-fi party, game night, Halloween. */
+
+[data-aesthetic="fun"][data-palette="cosmic"][data-mode="dark"] {
+  /* Surfaces -- deep space blue */
+  --background:           oklch(0.13 0.025 220);
+  --foreground:           oklch(0.95 0.008 220);
+  --card:                 oklch(0.16 0.025 220);
+  --card-foreground:      oklch(0.95 0.008 220);
+  --popover:              oklch(0.19 0.025 220);
+  --popover-foreground:   oklch(0.95 0.008 220);
+
+  /* Interactive -- vivid cyan */
+  --primary:              oklch(0.75 0.16 180);
+  --primary-foreground:   oklch(0.13 0.04 180);
+  --secondary:            oklch(0.21 0.025 220);
+  --secondary-foreground: oklch(0.92 0.008 220);
+  --muted:                oklch(0.21 0.025 220);
+  --muted-foreground:     oklch(0.62 0.03 220);
+  --accent:               oklch(0.25 0.03 220);
+  --accent-foreground:    oklch(0.95 0.008 220);
+  --destructive:          oklch(0.65 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border:               oklch(1 0 0 / 10%);
+  --input:                oklch(1 0 0 / 12%);
+  --ring:                 oklch(0.65 0.14 180);
+  --radius:               1rem;
+
+  /* Charts */
+  --chart-1: oklch(0.75 0.16 180);
+  --chart-2: oklch(0.68 0.18 280);
+  --chart-3: oklch(0.72 0.14 120);
+  --chart-4: oklch(0.70 0.16 330);
+  --chart-5: oklch(0.65 0.12 60);
+
+  /* Typography */
+  --font-heading:         'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body:            'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight:       800;
+  --heading-tracking:     0em;
+  --heading-transform:    none;
+  --body-line-height:     1.55;
+
+  /* Shadows (cyan glow) */
+  --shadow-sm: 0 1px 2px oklch(0.40 0.12 180 / 14%);
+  --shadow-md: 0 2px 4px oklch(0.40 0.12 180 / 8%), 0 4px 8px oklch(0.40 0.12 180 / 5%);
+  --shadow-lg: 0 4px 8px oklch(0.40 0.12 180 / 7%), 0 8px 16px oklch(0.40 0.12 180 / 4%), 0 16px 32px oklch(0.40 0.12 180 / 2.5%);
+  --shadow-color:         oklch(0.40 0.12 180);
+  --shadow-strength:      0.28;
+
+  /* Structural */
+  --border-weight:        2px;
+  --surface-grain:        none;
+
+  /* Per-aesthetic structural */
+  --radius-card:          16px;
+  --radius-button:        9999px;
+  --motion-duration-standard: 300ms;
+  --motion-ease:          cubic-bezier(0.25, 0.1, 0.25, 1);
+  --divider-color:        var(--border);
+  --section-gap:          24px;
+  --page-padding:         16px;
+}

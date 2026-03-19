@@ -1,0 +1,107 @@
+/* ── Neon Theme ────────────────────────────────────────────────────── */
+/* Bold, Gen Z, unapologetically fun. Energy drink meets house party. */
+/* Neutral base hue: 290 | Default accent hue: 330 (hot magenta/pink) */
+
+[data-theme="neon"][data-mode="dark"] {
+  /* Surfaces — deep purple-shifted */
+  --background: oklch(0.14 0.03 290);
+  --foreground: oklch(0.95 0.01 290);
+  --card: oklch(0.17 0.03 290);
+  --card-foreground: oklch(0.95 0.01 290);
+  --popover: oklch(0.20 0.03 290);
+  --popover-foreground: oklch(0.95 0.01 290);
+
+  /* Interactive — hot magenta accent */
+  --primary: oklch(0.72 0.22 330);
+  --primary-foreground: oklch(0.13 0.04 330);
+  --secondary: oklch(0.22 0.03 290);
+  --secondary-foreground: oklch(0.92 0.01 290);
+  --muted: oklch(0.22 0.03 290);
+  --muted-foreground: oklch(0.60 0.04 290);
+  --accent: oklch(0.26 0.04 290);
+  --accent-foreground: oklch(0.95 0.01 290);
+  --destructive: oklch(0.65 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.65 0.20 330);
+  --radius: 1rem;
+
+  /* Charts */
+  --chart-1: oklch(0.72 0.22 330);
+  --chart-2: oklch(0.68 0.18 260);
+  --chart-3: oklch(0.75 0.16 80);
+  --chart-4: oklch(0.65 0.20 180);
+  --chart-5: oklch(0.70 0.14 30);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.45 0.15 330);
+  --shadow-strength: 0.30;
+  --surface-grain: none;
+  --border-weight: 2px;
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 800;
+  --heading-tracking: -0.02em;
+  --heading-transform: none;
+  --body-line-height: 1.55;
+
+  /* Shadows (concrete values — accent-colored glow) */
+  --shadow-sm: 0 1px 2px oklch(0.45 0.15 330 / 15%);
+  --shadow-md: 0 2px 4px oklch(0.45 0.15 330 / 9%), 0 4px 8px oklch(0.45 0.15 330 / 6%);
+  --shadow-lg: 0 4px 8px oklch(0.45 0.15 330 / 7.5%), 0 8px 16px oklch(0.45 0.15 330 / 4.5%), 0 16px 32px oklch(0.45 0.15 330 / 3%);
+}
+
+[data-theme="neon"][data-mode="light"] {
+  /* Surfaces — light purple-white */
+  --background: oklch(0.97 0.008 290);
+  --foreground: oklch(0.16 0.04 290);
+  --card: oklch(0.99 0.005 290);
+  --card-foreground: oklch(0.16 0.04 290);
+  --popover: oklch(0.99 0.005 290);
+  --popover-foreground: oklch(0.16 0.04 290);
+
+  /* Interactive — deeper magenta for contrast on white */
+  --primary: oklch(0.55 0.22 330);
+  --primary-foreground: oklch(0.98 0.005 330);
+  --secondary: oklch(0.94 0.01 290);
+  --secondary-foreground: oklch(0.20 0.04 290);
+  --muted: oklch(0.94 0.01 290);
+  --muted-foreground: oklch(0.48 0.04 290);
+  --accent: oklch(0.94 0.02 290);
+  --accent-foreground: oklch(0.20 0.04 290);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(0.88 0.015 290);
+  --input: oklch(0.88 0.015 290);
+  --ring: oklch(0.55 0.22 330);
+  --radius: 1rem;
+
+  /* Charts */
+  --chart-1: oklch(0.55 0.22 330);
+  --chart-2: oklch(0.50 0.16 260);
+  --chart-3: oklch(0.55 0.14 80);
+  --chart-4: oklch(0.48 0.18 180);
+  --chart-5: oklch(0.52 0.13 30);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.45 0.15 330);
+  --shadow-strength: 0.20;
+  --surface-grain: none;
+  --border-weight: 2px;
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 800;
+  --heading-tracking: -0.02em;
+  --heading-transform: none;
+  --body-line-height: 1.55;
+
+  /* Shadows (concrete values — accent glow, softer) */
+  --shadow-sm: 0 1px 2px oklch(0.45 0.15 330 / 10%);
+  --shadow-md: 0 2px 4px oklch(0.45 0.15 330 / 6%), 0 4px 8px oklch(0.45 0.15 330 / 4%);
+  --shadow-lg: 0 4px 8px oklch(0.45 0.15 330 / 5%), 0 8px 16px oklch(0.45 0.15 330 / 3%), 0 16px 32px oklch(0.45 0.15 330 / 2%);
+}

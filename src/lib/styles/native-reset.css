@@ -1,0 +1,126 @@
+/*
+ * Native-feel reset — kills browser tells on mobile, leaves desktop alone.
+ * Imported from app.css.
+ */
+
+/* ── Kill browser-like tells (mobile only) ──────────────────────────── */
+
+* {
+	-webkit-tap-highlight-color: transparent;
+	box-sizing: border-box;
+}
+
+/* Disable text selection and context menu on chrome elements only */
+nav,
+header,
+footer,
+button,
+[role='button'] {
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+}
+
+/* Allow text selection on content */
+p,
+article,
+.event-description,
+.comment-text {
+	-webkit-user-select: text;
+	user-select: text;
+}
+
+/* Lock viewport — all scrolling happens inside #scroll-root.
+   This lets overscroll-behavior-y: none work on iOS (only works on
+   non-viewport scroll containers). */
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+#scroll-root {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: clip;
+	overscroll-behavior-y: none;
+	/* No background-color — html provides the base color.
+	   Transparency lets the ambient canvas (z-index: 0)
+	   show through gaps between content sections. */
+}
+
+/* 300ms tap delay removal + pointer cursor on interactive elements */
+a,
+button,
+[role='button'] {
+	touch-action: manipulation;
+	cursor: pointer;
+}
+
+input,
+select,
+textarea {
+	touch-action: manipulation;
+}
+
+/* ── Touch feedback (iOS-style scale-down, touch devices only) ───────── */
+
+@media (hover: none) and (pointer: coarse) {
+	button:active,
+	[role='button']:active,
+	a.card:active {
+		transform: scale(0.97);
+		opacity: 0.7;
+		transition:
+			transform 100ms ease-out,
+			opacity 100ms ease-out;
+	}
+
+	.btn-primary:active {
+		transform: scale(0.95);
+		opacity: 0.85;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	button,
+	[role='button'],
+	a.card {
+		transition: none !important;
+	}
+}
+
+/* ── Scroll containers ────────────────────────────────────────────────── */
+
+.scroll-container {
+	overflow-y: auto;
+}
+
+.horizontal-scroll {
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll > * {
+	scroll-snap-align: start;
+}
+
+/* ── Thin scrollbars (mobile override) ────────────────────────────────── */
+
+@media (hover: none) and (pointer: coarse) {
+	::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba(255, 255, 255, 0.15);
+		border-radius: 2px;
+	}
+}

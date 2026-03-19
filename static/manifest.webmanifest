@@ -1,0 +1,41 @@
+{
+	"name": "Ephemeral Events",
+	"short_name": "Ephemeral",
+	"description": "Private, self-destructing event pages. RSVP, tickets, photos — all auto-deleted.",
+	"start_url": "/my-events",
+	"display": "standalone",
+	"background_color": "#111110",
+	"theme_color": "#111110",
+	"orientation": "portrait",
+	"categories": ["social", "lifestyle"],
+	"icons": [
+		{
+			"src": "/landing/icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/landing/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "/landing/icon-512-maskable.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"shortcuts": [
+		{
+			"name": "Create Event",
+			"url": "/create",
+			"icons": [{ "src": "/landing/icon-192.png", "sizes": "192x192" }]
+		},
+		{
+			"name": "My Events",
+			"url": "/my-events",
+			"icons": [{ "src": "/landing/icon-192.png", "sizes": "192x192" }]
+		}
+	]
+}

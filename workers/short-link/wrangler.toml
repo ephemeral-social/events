@@ -1,0 +1,15 @@
+name = "ephemeral-short-links"
+main = "src/index.ts"
+compatibility_date = "2025-12-01"
+
+[[kv_namespaces]]
+binding = "SHORT_LINKS"
+id = "YOUR_KV_NAMESPACE_ID"
+
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[vars]
+FALLBACK_URL = "https://ephemeralsocial.com"
+CANONICAL_ORIGIN = "https://ephemeralsocial.com"

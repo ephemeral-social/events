@@ -1,0 +1,107 @@
+/* ── Gilded Theme ──────────────────────────────────────────────────── */
+/* Opulent, luxurious, ceremonial. The Met Gala. */
+/* Neutral base hue: 50 | Default accent hue: 85 (true gold) */
+
+[data-theme="gilded"][data-mode="dark"] {
+  /* Surfaces — deep warm black with gold undertone */
+  --background: oklch(0.13 0.01 50);
+  --foreground: oklch(0.90 0.03 85);
+  --card: oklch(0.16 0.01 50);
+  --card-foreground: oklch(0.90 0.03 85);
+  --popover: oklch(0.19 0.01 50);
+  --popover-foreground: oklch(0.90 0.03 85);
+
+  /* Interactive — true gold accent */
+  --primary: oklch(0.75 0.13 85);
+  --primary-foreground: oklch(0.13 0.03 85);
+  --secondary: oklch(0.21 0.01 50);
+  --secondary-foreground: oklch(0.88 0.03 85);
+  --muted: oklch(0.21 0.01 50);
+  --muted-foreground: oklch(0.59 0.04 60);
+  --accent: oklch(0.25 0.02 50);
+  --accent-foreground: oklch(0.90 0.03 85);
+  --destructive: oklch(0.65 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(0.35 0.05 85 / 30%);
+  --input: oklch(0.35 0.05 85 / 25%);
+  --ring: oklch(0.70 0.11 85);
+  --radius: 0.25rem;
+
+  /* Charts */
+  --chart-1: oklch(0.75 0.13 85);
+  --chart-2: oklch(0.70 0.10 45);
+  --chart-3: oklch(0.60 0.08 150);
+  --chart-4: oklch(0.68 0.12 20);
+  --chart-5: oklch(0.55 0.10 280);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.10 0.02 50);
+  --shadow-strength: 0.08;
+  --surface-grain: none;
+  --border-weight: 1px;
+  --font-heading: 'Vollkorn', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 700;
+  --heading-tracking: 0.06em;
+  --heading-transform: uppercase;
+  --body-line-height: 1.55;
+
+  /* Shadows (concrete values — minimal, luxury is flat) */
+  --shadow-sm: 0 1px 2px oklch(0.10 0.02 50 / 4%);
+  --shadow-md: 0 2px 4px oklch(0.10 0.02 50 / 2.5%), 0 4px 8px oklch(0.10 0.02 50 / 1.6%);
+  --shadow-lg: 0 4px 8px oklch(0.10 0.02 50 / 2%), 0 8px 16px oklch(0.10 0.02 50 / 1.2%), 0 16px 32px oklch(0.10 0.02 50 / 0.8%);
+}
+
+[data-theme="gilded"][data-mode="light"] {
+  /* Surfaces — warm cream with gold undertone */
+  --background: oklch(0.97 0.008 60);
+  --foreground: oklch(0.17 0.02 50);
+  --card: oklch(0.99 0.005 60);
+  --card-foreground: oklch(0.17 0.02 50);
+  --popover: oklch(0.99 0.005 60);
+  --popover-foreground: oklch(0.17 0.02 50);
+
+  /* Interactive — deeper gold for contrast on white */
+  --primary: oklch(0.50 0.12 85);
+  --primary-foreground: oklch(0.98 0.01 60);
+  --secondary: oklch(0.95 0.01 60);
+  --secondary-foreground: oklch(0.22 0.02 50);
+  --muted: oklch(0.95 0.01 60);
+  --muted-foreground: oklch(0.50 0.03 50);
+  --accent: oklch(0.95 0.015 70);
+  --accent-foreground: oklch(0.22 0.02 50);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(0.85 0.03 85);
+  --input: oklch(0.85 0.03 85);
+  --ring: oklch(0.50 0.12 85);
+  --radius: 0.25rem;
+
+  /* Charts */
+  --chart-1: oklch(0.50 0.12 85);
+  --chart-2: oklch(0.48 0.10 45);
+  --chart-3: oklch(0.45 0.08 150);
+  --chart-4: oklch(0.52 0.11 20);
+  --chart-5: oklch(0.42 0.10 280);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.10 0.02 50);
+  --shadow-strength: 0.18;
+  --surface-grain: none;
+  --border-weight: 1px;
+  --font-heading: 'Vollkorn', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 700;
+  --heading-tracking: 0.06em;
+  --heading-transform: uppercase;
+  --body-line-height: 1.55;
+
+  /* Shadows (concrete values — minimal) */
+  --shadow-sm: 0 1px 2px oklch(0.10 0.02 50 / 9%);
+  --shadow-md: 0 2px 4px oklch(0.10 0.02 50 / 5%), 0 4px 8px oklch(0.10 0.02 50 / 3.6%);
+  --shadow-lg: 0 4px 8px oklch(0.10 0.02 50 / 4.5%), 0 8px 16px oklch(0.10 0.02 50 / 2.7%), 0 16px 32px oklch(0.10 0.02 50 / 1.8%);
+}

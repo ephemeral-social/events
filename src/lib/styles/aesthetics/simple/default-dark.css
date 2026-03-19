@@ -1,0 +1,66 @@
+/* ── Simple / Default / Dark ──────────────────────────────────────── */
+/* Achromatic neutral. Zero chroma. The absence of color IS the statement. */
+
+[data-aesthetic="simple"][data-palette="default"][data-mode="dark"] {
+  /* Surfaces */
+  --background:           oklch(0.13 0 0);
+  --foreground:           oklch(0.93 0 0);
+  --card:                 oklch(0.17 0 0);
+  --card-foreground:      oklch(0.93 0 0);
+  --popover:              oklch(0.21 0 0);
+  --popover-foreground:   oklch(0.93 0 0);
+
+  /* Interactive */
+  --primary:              oklch(0.93 0 0);
+  --primary-foreground:   oklch(0.13 0 0);
+  --secondary:            oklch(0.17 0 0);
+  --secondary-foreground: oklch(0.93 0 0);
+  --muted:                oklch(0.17 0 0);
+  --muted-foreground:     oklch(0.65 0 0);
+  --accent:               oklch(0.21 0 0);
+  --accent-foreground:    oklch(0.93 0 0);
+  --destructive:          oklch(0.65 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border:               oklch(0.28 0 0);
+  --input:                oklch(0.28 0 0);
+  --ring:                 oklch(0.93 0 0);
+  --radius:               0.5rem;
+
+  /* Charts */
+  --chart-1: oklch(0.93 0 0);
+  --chart-2: oklch(0.65 0.14 150);
+  --chart-3: oklch(0.65 0.20 25);
+  --chart-4: oklch(0.68 0.16 240);
+  --chart-5: oklch(0.70 0.12 60);
+
+  /* Typography */
+  --font-heading:         'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body:            'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:            'IBM Plex Mono', 'Menlo', monospace;
+  --heading-weight:       500;
+  --heading-tracking:     -0.025em;
+  --heading-transform:    none;
+  --body-line-height:     1.55;
+
+  /* Shadows */
+  --shadow-sm:            none;
+  --shadow-md:            none;
+  --shadow-lg:            none;
+  --shadow-color:         oklch(0 0 0);
+  --shadow-strength:      0;
+
+  /* Structural */
+  --border-weight:        1px;
+  --surface-grain:        none;
+
+  /* Per-aesthetic structural */
+  --radius-card:          10px;
+  --radius-button:        6px;
+  --motion-duration-standard: 200ms;
+  --motion-ease:          ease;
+  --divider-color:        color-mix(in oklch, var(--border) 60%, transparent);
+  --section-gap:          32px;
+  --page-padding:         16px;
+}

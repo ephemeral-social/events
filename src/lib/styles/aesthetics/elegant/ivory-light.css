@@ -1,0 +1,65 @@
+/* ── Elegant / Ivory / Light ──────────────────────────────────────── */
+/* Classic wedding stationery. Warm ivory like cotton paper. */
+
+[data-aesthetic="elegant"][data-palette="ivory"][data-mode="light"] {
+  /* Surfaces -- warm ivory */
+  --background:           oklch(0.975 0.008 85);
+  --foreground:           oklch(0.22 0.015 55);
+  --card:                 oklch(0.99 0.005 85);
+  --card-foreground:      oklch(0.22 0.015 55);
+  --popover:              oklch(0.99 0.005 85);
+  --popover-foreground:   oklch(0.22 0.015 55);
+
+  /* Interactive -- muted sage green accent */
+  --primary:              oklch(0.52 0.06 145);
+  --primary-foreground:   oklch(0.98 0.005 85);
+  --secondary:            oklch(0.99 0.005 85);
+  --secondary-foreground: oklch(0.22 0.015 55);
+  --muted:                oklch(0.99 0.005 85);
+  --muted-foreground:     oklch(0.58 0.010 55);
+  --accent:               oklch(0.96 0.010 85);
+  --accent-foreground:    oklch(0.22 0.015 55);
+  --destructive:          oklch(0.55 0.14 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border:               oklch(0.88 0.010 55);
+  --input:                oklch(0.88 0.010 55);
+  --ring:                 oklch(0.52 0.06 145);
+  --radius:               0.1875rem;
+
+  /* Charts */
+  --chart-1: oklch(0.52 0.06 145);
+  --chart-2: oklch(0.42 0.012 55);
+  --chart-3: oklch(0.55 0.14 25);
+  --chart-4: oklch(0.48 0.04 250);
+  --chart-5: oklch(0.52 0.08 75);
+
+  /* Typography */
+  --font-heading:         'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body:            'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight:       300;
+  --heading-tracking:     0.08em;
+  --heading-transform:    uppercase;
+  --body-line-height:     1.70;
+
+  /* Shadows (minimal) */
+  --shadow-sm:            none;
+  --shadow-md:            0 1px 3px oklch(0 0 0 / 4%);
+  --shadow-lg:            0 2px 8px oklch(0 0 0 / 5%), 0 1px 2px oklch(0 0 0 / 3%);
+  --shadow-color:         oklch(0 0 0);
+  --shadow-strength:      0.04;
+
+  /* Structural */
+  --border-weight:        1px;
+  --surface-grain:        none;
+
+  /* Per-aesthetic structural */
+  --radius-card:          6px;
+  --radius-button:        3px;
+  --motion-duration-standard: 400ms;
+  --motion-ease:          cubic-bezier(0.25, 0, 0.15, 1);
+  --divider-color:        var(--muted-foreground);
+  --section-gap:          48px;
+  --page-padding:         32px;
+}

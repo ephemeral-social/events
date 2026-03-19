@@ -1,0 +1,107 @@
+/* ── Forest Theme ──────────────────────────────────────────────────── */
+/* Warm, grounded, nature-rooted. The Ephemeral signature. */
+/* Neutral base hue: 145 | Default accent hue: 150 (forest green) */
+
+[data-theme="forest"][data-mode="dark"] {
+  /* Surfaces — dark mossy green-tinted */
+  --background: oklch(0.16 0.02 145);
+  --foreground: oklch(0.93 0.01 90);
+  --card: oklch(0.19 0.02 145);
+  --card-foreground: oklch(0.93 0.01 90);
+  --popover: oklch(0.22 0.02 145);
+  --popover-foreground: oklch(0.93 0.01 90);
+
+  /* Interactive — forest green accent */
+  --primary: oklch(0.65 0.17 150);
+  --primary-foreground: oklch(0.15 0.03 150);
+  --secondary: oklch(0.24 0.02 145);
+  --secondary-foreground: oklch(0.90 0.01 90);
+  --muted: oklch(0.24 0.02 145);
+  --muted-foreground: oklch(0.65 0.03 90);
+  --accent: oklch(0.28 0.03 145);
+  --accent-foreground: oklch(0.93 0.01 90);
+  --destructive: oklch(0.65 0.20 25);
+  --destructive-foreground: oklch(0.98 0.01 90);
+
+  /* Structural */
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.55 0.14 150);
+  --radius: 0.625rem;
+
+  /* Charts */
+  --chart-1: oklch(0.65 0.17 150);
+  --chart-2: oklch(0.72 0.15 85);
+  --chart-3: oklch(0.55 0.12 200);
+  --chart-4: oklch(0.68 0.18 40);
+  --chart-5: oklch(0.60 0.14 300);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.05 0.02 145);
+  --shadow-strength: 0.15;
+  --surface-grain: url('/textures/grain-warm.svg');
+  --border-weight: 1px;
+  --font-heading: 'Vollkorn', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 600;
+  --heading-tracking: 0em;
+  --heading-transform: none;
+  --body-line-height: 1.65;
+
+  /* Shadows (concrete values) */
+  --shadow-sm: 0 1px 2px oklch(0.05 0.02 145 / 8%);
+  --shadow-md: 0 2px 4px oklch(0.05 0.02 145 / 5%), 0 4px 8px oklch(0.05 0.02 145 / 3%);
+  --shadow-lg: 0 4px 8px oklch(0.05 0.02 145 / 4%), 0 8px 16px oklch(0.05 0.02 145 / 2.5%), 0 16px 32px oklch(0.05 0.02 145 / 1.5%);
+}
+
+[data-theme="forest"][data-mode="light"] {
+  /* Surfaces — warm cream with green undertone */
+  --background: oklch(0.97 0.01 90);
+  --foreground: oklch(0.18 0.03 145);
+  --card: oklch(0.99 0.005 90);
+  --card-foreground: oklch(0.18 0.03 145);
+  --popover: oklch(0.99 0.005 90);
+  --popover-foreground: oklch(0.18 0.03 145);
+
+  /* Interactive — deeper forest green for contrast on white */
+  --primary: oklch(0.48 0.15 150);
+  --primary-foreground: oklch(0.98 0.01 90);
+  --secondary: oklch(0.94 0.01 145);
+  --secondary-foreground: oklch(0.25 0.03 145);
+  --muted: oklch(0.94 0.01 145);
+  --muted-foreground: oklch(0.50 0.03 145);
+  --accent: oklch(0.94 0.02 145);
+  --accent-foreground: oklch(0.25 0.03 145);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0.01 0);
+
+  /* Structural */
+  --border: oklch(0.88 0.02 145);
+  --input: oklch(0.88 0.02 145);
+  --ring: oklch(0.48 0.15 150);
+  --radius: 0.625rem;
+
+  /* Charts */
+  --chart-1: oklch(0.48 0.15 150);
+  --chart-2: oklch(0.55 0.13 85);
+  --chart-3: oklch(0.45 0.12 200);
+  --chart-4: oklch(0.52 0.16 40);
+  --chart-5: oklch(0.48 0.14 300);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.40 0.03 145);
+  --shadow-strength: 0.30;
+  --surface-grain: url('/textures/grain-warm.svg');
+  --border-weight: 1px;
+  --font-heading: 'Vollkorn', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 600;
+  --heading-tracking: 0em;
+  --heading-transform: none;
+  --body-line-height: 1.65;
+
+  /* Shadows (concrete values) */
+  --shadow-sm: 0 1px 2px oklch(0.40 0.03 145 / 15%);
+  --shadow-md: 0 2px 4px oklch(0.40 0.03 145 / 10%), 0 4px 8px oklch(0.40 0.03 145 / 6%);
+  --shadow-lg: 0 4px 8px oklch(0.40 0.03 145 / 8%), 0 8px 16px oklch(0.40 0.03 145 / 5%), 0 16px 32px oklch(0.40 0.03 145 / 3%);
+}

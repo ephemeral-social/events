@@ -1,0 +1,56 @@
+/*
+ * View Transitions — iOS-style slide animations.
+ * Direction set via data-nav-direction attribute on <html>.
+ */
+
+@media (prefers-reduced-motion: no-preference) {
+	/* Forward navigation (default) */
+	::view-transition-old(root) {
+		animation: 250ms var(--motion-ease-standard) both vt-slide-to-left;
+	}
+
+	::view-transition-new(root) {
+		animation: 250ms var(--motion-ease-standard) both vt-slide-from-right;
+	}
+
+	/* Back navigation */
+	html[data-nav-direction='back'] ::view-transition-old(root) {
+		animation: 250ms var(--motion-ease-standard) both vt-slide-to-right;
+	}
+
+	html[data-nav-direction='back'] ::view-transition-new(root) {
+		animation: 250ms var(--motion-ease-standard) both vt-slide-from-left;
+	}
+
+	/* Shared element transitions — morph between pages */
+	::view-transition-group(*) {
+		animation-duration: 350ms;
+		animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+	}
+}
+
+@keyframes vt-slide-to-left {
+	to {
+		transform: translateX(-30%);
+		opacity: 0;
+	}
+}
+
+@keyframes vt-slide-from-right {
+	from {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes vt-slide-to-right {
+	to {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes vt-slide-from-left {
+	from {
+		transform: translateX(-30%);
+		opacity: 0;
+	}
+}

@@ -1,0 +1,66 @@
+/* ── Simple / Sage / Dark ─────────────────────────────────────────── */
+/* Calm, natural, grounded. Muted green on warm near-black. */
+
+[data-aesthetic="simple"][data-palette="sage"][data-mode="dark"] {
+  /* Surfaces */
+  --background:           oklch(0.13 0.02 155);
+  --foreground:           oklch(0.93 0.01 155);
+  --card:                 oklch(0.17 0.025 155);
+  --card-foreground:      oklch(0.93 0.01 155);
+  --popover:              oklch(0.21 0.025 155);
+  --popover-foreground:   oklch(0.93 0.01 155);
+
+  /* Interactive */
+  --primary:              oklch(0.66 0.14 155);
+  --primary-foreground:   oklch(0.98 0.005 155);
+  --secondary:            oklch(0.17 0.025 155);
+  --secondary-foreground: oklch(0.93 0.01 155);
+  --muted:                oklch(0.17 0.025 155);
+  --muted-foreground:     oklch(0.64 0.015 155);
+  --accent:               oklch(0.21 0.025 155);
+  --accent-foreground:    oklch(0.93 0.01 155);
+  --destructive:          oklch(0.65 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border:               oklch(0.28 0.02 155);
+  --input:                oklch(0.28 0.02 155);
+  --ring:                 oklch(0.66 0.14 155);
+  --radius:               0.5rem;
+
+  /* Charts */
+  --chart-1: oklch(0.66 0.12 155);
+  --chart-2: oklch(0.65 0.14 240);
+  --chart-3: oklch(0.65 0.20 25);
+  --chart-4: oklch(0.70 0.12 60);
+  --chart-5: oklch(0.60 0.14 300);
+
+  /* Typography */
+  --font-heading:         'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body:            'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:            'IBM Plex Mono', 'Menlo', monospace;
+  --heading-weight:       500;
+  --heading-tracking:     -0.025em;
+  --heading-transform:    none;
+  --body-line-height:     1.55;
+
+  /* Shadows */
+  --shadow-sm:            none;
+  --shadow-md:            none;
+  --shadow-lg:            none;
+  --shadow-color:         oklch(0 0 0);
+  --shadow-strength:      0;
+
+  /* Structural */
+  --border-weight:        1px;
+  --surface-grain:        none;
+
+  /* Per-aesthetic structural */
+  --radius-card:          10px;
+  --radius-button:        6px;
+  --motion-duration-standard: 200ms;
+  --motion-ease:          ease;
+  --divider-color:        color-mix(in oklch, var(--border) 60%, transparent);
+  --section-gap:          32px;
+  --page-padding:         16px;
+}

@@ -1,0 +1,18 @@
+{
+	"name": "ephemeral-og",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy"
+	},
+	"dependencies": {
+		"@cf-wasm/resvg": "^0.3.3",
+		"satori": "^0.19.2"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20260218.0",
+		"wrangler": "^4.0.0"
+	}
+}

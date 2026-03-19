@@ -1,0 +1,49 @@
+# Ephemeral Waitlist Worker Configuration
+# https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "ephemeral-waitlist"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# ============================================
+# D1 Database Binding
+# ============================================
+# After creating your D1 database, uncomment and update the database_id
+[[d1_databases]]
+binding = "ephemeral_waitlist"
+database_name = "ephemeral-waitlist"
+database_id = "YOUR_D1_DATABASE_ID"  # Get this after running: wrangler d1 create ephemeral-waitlist
+
+# ============================================
+# Environment Variables (Secrets)
+# ============================================
+# Set these using: wrangler secret put SECRET_NAME
+# 
+# Required:
+#   STRIPE_WEBHOOK_SECRET - Stripe webhook signing secret for /api/founder endpoint
+#
+# Optional:
+#   BEEHIIV_API_KEY   - If syncing to Beehiiv for email sending
+#   BEEHIIV_PUBLICATION_ID - Your Beehiiv publication ID
+
+[vars]
+ENVIRONMENT = "production"
+
+# ============================================
+# Custom Domain (Optional)
+# ============================================
+# Configure in Cloudflare Dashboard: Workers & Pages > your worker > Settings > Triggers
+# Add route: api.ephemeralsocial.com/* 
+# Or use the default: ephemeral-waitlist.YOUR_SUBDOMAIN.workers.dev
+
+# ============================================
+# Development
+# ============================================
+# Run locally: wrangler dev
+# Deploy: wrangler deploy
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true

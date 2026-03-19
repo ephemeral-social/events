@@ -1,0 +1,66 @@
+/* ── Simple / Blue / Light ────────────────────────────────────────── */
+/* Utility blue on near-white with faint cool tint. */
+
+[data-aesthetic="simple"][data-palette="blue"][data-mode="light"] {
+  /* Surfaces */
+  --background:           oklch(0.985 0.008 250);
+  --foreground:           oklch(0.15 0.015 250);
+  --card:                 oklch(0.97 0.01 250);
+  --card-foreground:      oklch(0.15 0.015 250);
+  --popover:              oklch(0.97 0.01 250);
+  --popover-foreground:   oklch(0.15 0.015 250);
+
+  /* Interactive */
+  --primary:              oklch(0.50 0.18 245);
+  --primary-foreground:   oklch(0.98 0.005 245);
+  --secondary:            oklch(0.97 0.003 250);
+  --secondary-foreground: oklch(0.15 0.01 250);
+  --muted:                oklch(0.97 0.003 250);
+  --muted-foreground:     oklch(0.42 0.01 250);
+  --accent:               oklch(0.94 0.005 250);
+  --accent-foreground:    oklch(0.15 0.01 250);
+  --destructive:          oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border:               oklch(0.85 0.015 250);
+  --input:                oklch(0.85 0.015 250);
+  --ring:                 oklch(0.50 0.18 245);
+  --radius:               0.5rem;
+
+  /* Charts */
+  --chart-1: oklch(0.50 0.18 245);
+  --chart-2: oklch(0.52 0.14 150);
+  --chart-3: oklch(0.55 0.20 25);
+  --chart-4: oklch(0.48 0.16 60);
+  --chart-5: oklch(0.48 0.14 300);
+
+  /* Typography */
+  --font-heading:         'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body:            'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:            'IBM Plex Mono', 'Menlo', monospace;
+  --heading-weight:       500;
+  --heading-tracking:     -0.025em;
+  --heading-transform:    none;
+  --body-line-height:     1.55;
+
+  /* Shadows */
+  --shadow-sm:            none;
+  --shadow-md:            none;
+  --shadow-lg:            none;
+  --shadow-color:         oklch(0 0 0);
+  --shadow-strength:      0;
+
+  /* Structural */
+  --border-weight:        1px;
+  --surface-grain:        none;
+
+  /* Per-aesthetic structural */
+  --radius-card:          10px;
+  --radius-button:        6px;
+  --motion-duration-standard: 200ms;
+  --motion-ease:          ease;
+  --divider-color:        color-mix(in oklch, var(--border) 60%, transparent);
+  --section-gap:          32px;
+  --page-padding:         16px;
+}

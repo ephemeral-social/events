@@ -1,0 +1,57 @@
+/* ── Theme Index ───────────────────────────────────────────────────── */
+/* All 10 Ephemeral event themes. Each defines both dark and light modes. */
+
+@import './forest.css';
+@import './midnight.css';
+@import './ember.css';
+@import './slate.css';
+@import './bloom.css';
+@import './gilded.css';
+@import './neon.css';
+@import './dusk.css';
+@import './sand.css';
+@import './mono.css';
+
+/* ── Aesthetic System ─────────────────────────────────────────────── */
+/* 4 aesthetics x 4 palettes x 2 modes = 32 configurations.          */
+/* Coexists with legacy themes during transition.                     */
+
+/* Simple (utility-first, Inter, no shadows) */
+@import '../aesthetics/simple/default-dark.css';
+@import '../aesthetics/simple/default-light.css';
+@import '../aesthetics/simple/blue-dark.css';
+@import '../aesthetics/simple/blue-light.css';
+@import '../aesthetics/simple/sage-dark.css';
+@import '../aesthetics/simple/sage-light.css';
+@import '../aesthetics/simple/violet-dark.css';
+@import '../aesthetics/simple/violet-light.css';
+
+/* Fun (bold, energetic, Manrope 800, accent glow) */
+@import '../aesthetics/fun/party-dark.css';
+@import '../aesthetics/fun/party-light.css';
+@import '../aesthetics/fun/neon-dark.css';
+@import '../aesthetics/fun/neon-light.css';
+@import '../aesthetics/fun/sunset-dark.css';
+@import '../aesthetics/fun/sunset-light.css';
+@import '../aesthetics/fun/cosmic-dark.css';
+@import '../aesthetics/fun/cosmic-light.css';
+
+/* Warm (editorial, Cormorant Garamond + Source Sans 3, generous spacing) */
+@import '../aesthetics/warm/hearth-dark.css';
+@import '../aesthetics/warm/hearth-light.css';
+@import '../aesthetics/warm/clay-dark.css';
+@import '../aesthetics/warm/clay-light.css';
+@import '../aesthetics/warm/sage-dark.css';
+@import '../aesthetics/warm/sage-light.css';
+@import '../aesthetics/warm/wine-dark.css';
+@import '../aesthetics/warm/wine-light.css';
+
+/* Elegant (formal stationery, Cormorant Garamond + Raleway, uppercase) */
+@import '../aesthetics/elegant/ivory-dark.css';
+@import '../aesthetics/elegant/ivory-light.css';
+@import '../aesthetics/elegant/champagne-dark.css';
+@import '../aesthetics/elegant/champagne-light.css';
+@import '../aesthetics/elegant/midnight-dark.css';
+@import '../aesthetics/elegant/midnight-light.css';
+@import '../aesthetics/elegant/rose-dark.css';
+@import '../aesthetics/elegant/rose-light.css';

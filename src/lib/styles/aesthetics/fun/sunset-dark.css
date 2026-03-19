@@ -1,0 +1,65 @@
+/* ── Fun / Sunset / Dark ──────────────────────────────────────────── */
+/* Warm, saturated, golden hour. Vivid coral on deep amber-black. */
+
+[data-aesthetic="fun"][data-palette="sunset"][data-mode="dark"] {
+  /* Surfaces -- deep warm amber-black */
+  --background:           oklch(0.14 0.025 40);
+  --foreground:           oklch(0.94 0.015 60);
+  --card:                 oklch(0.17 0.025 40);
+  --card-foreground:      oklch(0.94 0.015 60);
+  --popover:              oklch(0.20 0.025 40);
+  --popover-foreground:   oklch(0.94 0.015 60);
+
+  /* Interactive -- vivid coral */
+  --primary:              oklch(0.70 0.18 25);
+  --primary-foreground:   oklch(0.14 0.03 25);
+  --secondary:            oklch(0.22 0.025 40);
+  --secondary-foreground: oklch(0.92 0.015 60);
+  --muted:                oklch(0.22 0.025 40);
+  --muted-foreground:     oklch(0.62 0.04 40);
+  --accent:               oklch(0.26 0.03 40);
+  --accent-foreground:    oklch(0.94 0.015 60);
+  --destructive:          oklch(0.65 0.20 15);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border:               oklch(1 0 0 / 11%);
+  --input:                oklch(1 0 0 / 13%);
+  --ring:                 oklch(0.62 0.16 25);
+  --radius:               1rem;
+
+  /* Charts */
+  --chart-1: oklch(0.70 0.18 25);
+  --chart-2: oklch(0.75 0.15 60);
+  --chart-3: oklch(0.65 0.14 330);
+  --chart-4: oklch(0.68 0.16 150);
+  --chart-5: oklch(0.60 0.18 275);
+
+  /* Typography */
+  --font-heading:         'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body:            'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight:       800;
+  --heading-tracking:     0em;
+  --heading-transform:    none;
+  --body-line-height:     1.55;
+
+  /* Shadows (coral glow) */
+  --shadow-sm: 0 1px 2px oklch(0.40 0.12 25 / 14%);
+  --shadow-md: 0 2px 4px oklch(0.40 0.12 25 / 8%), 0 4px 8px oklch(0.40 0.12 25 / 5%);
+  --shadow-lg: 0 4px 8px oklch(0.40 0.12 25 / 7%), 0 8px 16px oklch(0.40 0.12 25 / 4%), 0 16px 32px oklch(0.40 0.12 25 / 2.5%);
+  --shadow-color:         oklch(0.40 0.12 25);
+  --shadow-strength:      0.28;
+
+  /* Structural */
+  --border-weight:        2px;
+  --surface-grain:        none;
+
+  /* Per-aesthetic structural */
+  --radius-card:          16px;
+  --radius-button:        9999px;
+  --motion-duration-standard: 300ms;
+  --motion-ease:          cubic-bezier(0.25, 0.1, 0.25, 1);
+  --divider-color:        var(--border);
+  --section-gap:          24px;
+  --page-padding:         16px;
+}

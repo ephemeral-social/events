@@ -1,0 +1,65 @@
+/* ── Elegant / Champagne / Dark ───────────────────────────────────── */
+/* Warm metallics, luxe. Deep warm brown-black with brushed gold. */
+
+[data-aesthetic="elegant"][data-palette="champagne"][data-mode="dark"] {
+  /* Surfaces -- deep warm brown-black */
+  --background:           oklch(0.14 0.010 50);
+  --foreground:           oklch(0.91 0.015 70);
+  --card:                 oklch(0.17 0.010 50);
+  --card-foreground:      oklch(0.91 0.015 70);
+  --popover:              oklch(0.20 0.012 50);
+  --popover-foreground:   oklch(0.91 0.015 70);
+
+  /* Interactive -- bright muted gold */
+  --primary:              oklch(0.72 0.10 75);
+  --primary-foreground:   oklch(0.14 0.02 75);
+  --secondary:            oklch(0.17 0.010 50);
+  --secondary-foreground: oklch(0.91 0.015 70);
+  --muted:                oklch(0.17 0.010 50);
+  --muted-foreground:     oklch(0.53 0.010 60);
+  --accent:               oklch(0.20 0.012 50);
+  --accent-foreground:    oklch(0.91 0.015 70);
+  --destructive:          oklch(0.68 0.14 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border:               oklch(0.27 0.010 55);
+  --input:                oklch(0.27 0.010 55);
+  --ring:                 oklch(0.72 0.10 75);
+  --radius:               0.1875rem;
+
+  /* Charts */
+  --chart-1: oklch(0.72 0.10 75);
+  --chart-2: oklch(0.70 0.012 60);
+  --chart-3: oklch(0.68 0.14 25);
+  --chart-4: oklch(0.68 0.06 145);
+  --chart-5: oklch(0.65 0.04 250);
+
+  /* Typography */
+  --font-heading:         'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body:            'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight:       300;
+  --heading-tracking:     0.08em;
+  --heading-transform:    uppercase;
+  --body-line-height:     1.70;
+
+  /* Shadows (minimal) */
+  --shadow-sm:            none;
+  --shadow-md:            0 1px 3px oklch(0 0 0 / 8%);
+  --shadow-lg:            0 2px 8px oklch(0 0 0 / 10%), 0 1px 2px oklch(0 0 0 / 6%);
+  --shadow-color:         oklch(0 0 0);
+  --shadow-strength:      0.04;
+
+  /* Structural */
+  --border-weight:        1px;
+  --surface-grain:        none;
+
+  /* Per-aesthetic structural */
+  --radius-card:          6px;
+  --radius-button:        3px;
+  --motion-duration-standard: 400ms;
+  --motion-ease:          cubic-bezier(0.25, 0, 0.15, 1);
+  --divider-color:        var(--muted-foreground);
+  --section-gap:          48px;
+  --page-padding:         32px;
+}

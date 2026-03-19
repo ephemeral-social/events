@@ -1,0 +1,13 @@
+name = "ephemeral-events-web"
+compatibility_date = "2025-12-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+# Environment variables (BACKEND_URL, STRIPE_PUBLISHABLE_KEY, PINTEREST_APP_ID)
+# are managed as Secrets in the Cloudflare Pages dashboard.
+# See README.md for the full list of required environment variables.
+
+# KV namespace ID is a resource identifier, not a secret — safe in public repos
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "b648a1a57aff4f31ab302ac315ea6d7a"

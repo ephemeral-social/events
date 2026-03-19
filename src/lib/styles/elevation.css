@@ -1,0 +1,25 @@
+/* ── Elevation & Shadow System ─────────────────────────────────────── */
+/* Each theme defines --shadow-sm, --shadow-md, --shadow-lg with      */
+/* concrete OKLCH shadow values. This file provides shared utility     */
+/* classes and maps components to elevation levels.                    */
+
+/* Utility classes for manual shadow application */
+.shadow-theme-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-theme-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-theme-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Component elevation mapping:
+ *
+ * Level 0 (base):    Page background — --background, no shadow
+ * Level 1 (cards):   Cards, containers — --card + --shadow-sm
+ * Level 2 (popover): Popovers, dropdowns — --popover + --shadow-md
+ * Level 3 (modal):   Modal dialogs — --popover + --shadow-lg
+ */

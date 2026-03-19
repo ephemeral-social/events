@@ -1,0 +1,107 @@
+/* ── Bloom Theme ───────────────────────────────────────────────────── */
+/* Soft, botanical, romantic. A garden in late May. */
+/* Neutral base hue: 350 | Default accent hue: 350 (dusty rose) */
+
+[data-theme="bloom"][data-mode="dark"] {
+  /* Surfaces — dark rose-tinted */
+  --background: oklch(0.16 0.015 350);
+  --foreground: oklch(0.92 0.01 350);
+  --card: oklch(0.19 0.015 350);
+  --card-foreground: oklch(0.92 0.01 350);
+  --popover: oklch(0.22 0.015 350);
+  --popover-foreground: oklch(0.92 0.01 350);
+
+  /* Interactive — dusty rose accent */
+  --primary: oklch(0.70 0.12 350);
+  --primary-foreground: oklch(0.16 0.03 350);
+  --secondary: oklch(0.24 0.015 350);
+  --secondary-foreground: oklch(0.90 0.01 350);
+  --muted: oklch(0.24 0.015 350);
+  --muted-foreground: oklch(0.62 0.03 350);
+  --accent: oklch(0.28 0.02 350);
+  --accent-foreground: oklch(0.92 0.01 350);
+  --destructive: oklch(0.65 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.62 0.10 350);
+  --radius: 0.875rem;
+
+  /* Charts */
+  --chart-1: oklch(0.70 0.12 350);
+  --chart-2: oklch(0.65 0.10 130);
+  --chart-3: oklch(0.60 0.14 280);
+  --chart-4: oklch(0.72 0.11 55);
+  --chart-5: oklch(0.55 0.12 200);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.50 0.04 350);
+  --shadow-strength: 0.10;
+  --surface-grain: url('/textures/grain-warm.svg');
+  --border-weight: 1px;
+  --font-heading: 'Vollkorn', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 400;
+  --heading-tracking: 0.01em;
+  --heading-transform: none;
+  --body-line-height: 1.70;
+
+  /* Shadows (concrete values — soft, diffused, rose-tinted) */
+  --shadow-sm: 0 1px 2px oklch(0.50 0.04 350 / 5%);
+  --shadow-md: 0 2px 4px oklch(0.50 0.04 350 / 3%), 0 4px 8px oklch(0.50 0.04 350 / 2%);
+  --shadow-lg: 0 4px 8px oklch(0.50 0.04 350 / 2.5%), 0 8px 16px oklch(0.50 0.04 350 / 1.5%), 0 16px 32px oklch(0.50 0.04 350 / 1%);
+}
+
+[data-theme="bloom"][data-mode="light"] {
+  /* Surfaces — soft blush-white */
+  --background: oklch(0.98 0.008 350);
+  --foreground: oklch(0.20 0.02 350);
+  --card: oklch(0.99 0.005 350);
+  --card-foreground: oklch(0.20 0.02 350);
+  --popover: oklch(0.99 0.005 350);
+  --popover-foreground: oklch(0.20 0.02 350);
+
+  /* Interactive — deeper rose for contrast on white */
+  --primary: oklch(0.55 0.13 350);
+  --primary-foreground: oklch(0.98 0.005 350);
+  --secondary: oklch(0.95 0.01 350);
+  --secondary-foreground: oklch(0.25 0.02 350);
+  --muted: oklch(0.95 0.01 350);
+  --muted-foreground: oklch(0.50 0.03 350);
+  --accent: oklch(0.95 0.015 350);
+  --accent-foreground: oklch(0.25 0.02 350);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  /* Structural */
+  --border: oklch(0.90 0.01 350);
+  --input: oklch(0.90 0.01 350);
+  --ring: oklch(0.55 0.13 350);
+  --radius: 0.875rem;
+
+  /* Charts */
+  --chart-1: oklch(0.55 0.13 350);
+  --chart-2: oklch(0.50 0.10 130);
+  --chart-3: oklch(0.48 0.12 280);
+  --chart-4: oklch(0.55 0.10 55);
+  --chart-5: oklch(0.45 0.11 200);
+
+  /* Ephemeral-custom */
+  --shadow-color: oklch(0.50 0.04 350);
+  --shadow-strength: 0.20;
+  --surface-grain: url('/textures/grain-warm.svg');
+  --border-weight: 1px;
+  --font-heading: 'Vollkorn', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --heading-weight: 400;
+  --heading-tracking: 0.01em;
+  --heading-transform: none;
+  --body-line-height: 1.70;
+
+  /* Shadows (concrete values — soft, diffused) */
+  --shadow-sm: 0 1px 2px oklch(0.50 0.04 350 / 10%);
+  --shadow-md: 0 2px 4px oklch(0.50 0.04 350 / 6%), 0 4px 8px oklch(0.50 0.04 350 / 4%);
+  --shadow-lg: 0 4px 8px oklch(0.50 0.04 350 / 5%), 0 8px 16px oklch(0.50 0.04 350 / 3%), 0 16px 32px oklch(0.50 0.04 350 / 2%);
+}

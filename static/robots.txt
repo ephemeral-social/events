@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /e/
+Disallow: /api/
+Disallow: /create
+Disallow: /my-events
